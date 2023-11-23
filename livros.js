@@ -1,3 +1,8 @@
+const entidadeBibliografica = {
+  LIVRO:"Livro",
+  REVISTA:"Revista"
+}
+
 const livros = [
   {
     codigo: "LC123",
@@ -6,7 +11,8 @@ const livros = [
     anoPublicacao: 1899,
     emprestado: false,
     usuarioEmprestimo: null,
-    genero: "Drama"
+    genero: "Drama",
+    entidadeBibliografica: entidadeBibliografica.LIVRO
   },
   {
     codigo: "LT456",
@@ -15,7 +21,8 @@ const livros = [
     anoPublicacao: 1986,
     emprestado: false,
     usuarioEmprestimo: null,
-    genero: "Terror"
+    genero: "Terror",
+    entidadeBibliografica: entidadeBibliografica.LIVRO
   },
   {
     codigo: "RN789",
@@ -24,7 +31,8 @@ const livros = [
     anoPublicacao: 2022,
     emprestado: false,
     usuarioEmprestimo: null,
-    edicao: "Março"
+    edicao: "Março",
+    entidadeBibliografica: entidadeBibliografica.REVISTA
   },
   {
     codigo: "RN789",
@@ -33,7 +41,9 @@ const livros = [
     anoPublicacao: 2022,
     emprestado: false,
     usuarioEmprestimo: null,
-    edicao: "Março"
+    edicao: "Março",
+    entidadeBibliografica: entidadeBibliografica.REVISTA
   }
 ];
+
 exports.livros = livros;
