@@ -1,6 +1,6 @@
 const express = require('express');
 const { livros } = require('./livros');
-const cors = require('cords')
+const cors = require('cors')
 const app = express();
 const port = 3000;
 
