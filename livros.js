@@ -1,4 +1,3 @@
-// Simulando uma lista de livros
 const livros = [
   {
     codigo: "LC123",
