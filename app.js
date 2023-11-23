@@ -1,13 +1,11 @@
 const express = require('express');
 const { livros } = require('./livros');
+const cors = require('cords')
 const app = express();
 const port = 3000;
 
 
-app.use((req, res, next) => {
-  res.header('Access-Control-Allow-Origin', 'http://127.0.0.1:5500');
-  next();
-});
+app.use(cors());
 
 app.get('/acervo', (req, res) => {
   res.json(livros);
